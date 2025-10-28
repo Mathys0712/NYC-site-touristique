@@ -1,0 +1,315 @@
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Oswald", sans-serif;;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size:20px;
+    font-family: "Raleway", sans-serif;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #F3A444;
+}
+
+nav img {
+    height: 30px;
+    margin-right: 1180px;
+}
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+.img-skyline {
+    width: 100%;
+    height: 86vh; /* 60% de la hauteur de la fenêtre */
+    object-fit: cover; /* garde le ratio et couvre la zone */
+    display: block; /* remove inline-image gap under img so footer sits flush */
+}
+
+.title-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: "Oswald", sans-serif;
+}
+
+.phrase-accroche {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F3A444;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.702);
+    font-family: "Oswald", sans-serif;
+}
+
+.btn-explore {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    background-color: #F3A444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+.btn-explore:hover {
+    background-color: #e5943a;
+}
+
+/* Fin de Page */
+footer {
+    background-color: #646464;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    clear: both;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Attractions Section */
+.title-attractions {
+    padding: 50px;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    color: #222;
+}
+
+.attractions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.attraction-item {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attraction-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.attraction-item h2 {
+    font-family: "Oswald", sans-serif;
+    padding: 15px 20px 10px 20px;
+    margin: 0;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.attraction-item p {
+    font-family: "Poppins", sans-serif;
+    padding: 0 20px 15px 20px;
+    margin: 10px 0 0 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.attraction-item button {
+    margin: 0 20px 20px 20px;
+    padding: 10px 24px;
+    background-color: #F3A444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+}
+
+.attraction-item button:hover {
+    background-color: #e5943a;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablette (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    /* Navbar */
+    nav {
+        padding: 15px 30px;
+    }
+    
+    nav img {
+        margin-right: 0;
+    }
+    
+    nav ul {
+        gap: 20px;
+    }
+    
+    nav a {
+        font-size: 18px;
+    }
+    
+    /* Hero section */
+    .title-img {
+        font-size: 48px;
+    }
+    
+    .phrase-accroche {
+        font-size: 24px;
+    }
+    
+    .btn-explore {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    
+    /* Attractions grid - 2 colonnes sur tablette */
+    .attractions-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 30px;
+    }
+    
+    .title-attractions {
+        padding: 30px;
+        font-size: 1.75rem;
+    }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media screen and (max-width: 767px) {
+    /* Navbar mobile */
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    nav h1 {
+        font-size: 1.2rem;
+    }
+    
+    nav img {
+        margin-right: 0;
+        height: 40px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav a {
+        font-size: 16px;
+    }
+    
+    /* Hero section mobile */
+    .img-skyline {
+        height: 50vh;
+    }
+    
+    .title-img {
+        font-size: 32px;
+    }
+    
+    .phrase-accroche {
+        font-size: 18px;
+        top: 62%;
+    }
+    
+    .btn-explore {
+        font-size: 14px;
+        padding: 10px 18px;
+        top: 75%;
+    }
+    
+    /* Attractions grid - 1 colonne sur mobile */
+    .attractions-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .title-attractions {
+        padding: 20px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .attraction-item h2 {
+        font-size: 1.3rem;
+    }
+    
+    .attraction-item p {
+        font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* Petit mobile (jusqu'à 480px) */
+@media screen and (max-width: 480px) {
+    .title-img {
+        font-size: 28px;
+    }
+    
+    .phrase-accroche {
+        font-size: 16px;
+    }
+    
+    nav h1 {
+        font-size: 1rem;
+    }
+    
+    .attractions-container {
+        padding: 0 15px;
+    }
+    
+    .attraction-item img {
+        height: 200px;
+    }
+}
