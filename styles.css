@@ -313,3 +313,58 @@ footer {
         height: 200px;
     }
 }
+
+/* Statue Of Liberty Page */
+.attraction-full-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-top: 90px;;
+    justify-items: right;
+    margin-left: 55%;
+}
+
+.title-sol {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    font-size: 70px;
+    font-family: "Oswald", sans-serif;
+}
+
+.paragraph-sol {
+    position: absolute;
+    width: 50%;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    left: 12%;
+    top: 30%;
+    margin-bottom: 20px;
+    max-width: 40%;
+}
+
+.bloc {
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 40%;
+    border: #000000 2px solid;
+    padding: 10px;
+    border-radius : 10px;
+}
+
+.Technical-specifications {
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    color: #F3A444
+}
